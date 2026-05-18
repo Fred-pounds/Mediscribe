@@ -1,0 +1,416 @@
+[
+  {
+    "name": "Artemether-Lumefantrine (Coartem)",
+    "class": "Antimalarial",
+    "adult_dose": "4 tablets at 0, 8, 24, 36, 48 and 60 hours (80mg/480mg per dose)",
+    "pediatric_dose": "Weight-based: 5-14kg = 1 tab, 15-24kg = 2 tabs, 25-34kg = 3 tabs per dose",
+    "indications": "Uncomplicated Plasmodium falciparum malaria",
+    "contraindications": "First trimester pregnancy, severe malaria",
+    "notes": "Take with food or milk to improve absorption"
+  },
+  {
+    "name": "Artesunate IV",
+    "class": "Antimalarial",
+    "adult_dose": "2.4mg/kg IV at 0, 12, 24 hours then daily",
+    "pediatric_dose": "2.4mg/kg IV same schedule",
+    "indications": "Severe malaria, cerebral malaria",
+    "contraindications": "Known hypersensitivity",
+    "notes": "Preferred over quinine for severe malaria"
+  },
+  {
+    "name": "Amoxicillin",
+    "class": "Antibiotic (Beta-lactam)",
+    "adult_dose": "500mg three times daily for 5-7 days",
+    "pediatric_dose": "25-50mg/kg/day in three divided doses",
+    "indications": "Respiratory infections, ear infections, UTI, skin infections, H. pylori",
+    "contraindications": "Penicillin allergy",
+    "notes": "Can be taken with or without food"
+  },
+  {
+    "name": "Amoxicillin-Clavulanate (Augmentin)",
+    "class": "Antibiotic (Beta-lactam + inhibitor)",
+    "adult_dose": "625mg (500/125mg) three times daily for 5-7 days",
+    "pediatric_dose": "25-45mg/kg/day amoxicillin component in divided doses",
+    "indications": "Resistant infections, sinusitis, pneumonia, UTI, skin infections",
+    "contraindications": "Penicillin allergy, cholestatic jaundice from prior use",
+    "notes": "Take with food to reduce GI side effects"
+  },
+  {
+    "name": "Azithromycin",
+    "class": "Antibiotic (Macrolide)",
+    "adult_dose": "500mg on day 1, then 250mg daily for 4 days (or 500mg daily x 3 days)",
+    "pediatric_dose": "10mg/kg on day 1, then 5mg/kg daily for 4 days",
+    "indications": "Respiratory infections, typhoid, STIs, community-acquired pneumonia",
+    "contraindications": "Macrolide allergy, liver disease",
+    "notes": "Take 1 hour before or 2 hours after meals"
+  },
+  {
+    "name": "Ciprofloxacin",
+    "class": "Antibiotic (Fluoroquinolone)",
+    "adult_dose": "500mg twice daily for 5-7 days (UTI: 250-500mg twice daily x 3 days)",
+    "pediatric_dose": "Not recommended in children under 18 except specific indications",
+    "indications": "UTI, typhoid, diarrhoea, respiratory infections, skin infections",
+    "contraindications": "Children, pregnancy, tendon disorders, QT prolongation",
+    "notes": "Avoid dairy products, antacids within 2 hours"
+  },
+  {
+    "name": "Metronidazole",
+    "class": "Antibiotic/Antiprotozoal",
+    "adult_dose": "400-500mg three times daily for 5-7 days",
+    "pediatric_dose": "7.5mg/kg three times daily",
+    "indications": "Amoebic dysentery, giardiasis, anaerobic infections, bacterial vaginosis, H. pylori",
+    "contraindications": "First trimester pregnancy, alcohol use",
+    "notes": "Avoid alcohol during treatment and 48 hours after"
+  },
+  {
+    "name": "Paracetamol (Acetaminophen)",
+    "class": "Analgesic/Antipyretic",
+    "adult_dose": "500-1000mg every 4-6 hours, maximum 4g/day",
+    "pediatric_dose": "10-15mg/kg every 4-6 hours, maximum 60mg/kg/day",
+    "indications": "Pain, fever, headache, post-operative analgesia",
+    "contraindications": "Severe liver disease",
+    "notes": "Most common OTC medication. Safe in pregnancy"
+  },
+  {
+    "name": "Ibuprofen",
+    "class": "NSAID (Anti-inflammatory)",
+    "adult_dose": "400-600mg three times daily with food",
+    "pediatric_dose": "5-10mg/kg every 6-8 hours (>6 months)",
+    "indications": "Pain, fever, inflammation, dysmenorrhoea, arthritis",
+    "contraindications": "Peptic ulcer, renal impairment, third trimester pregnancy, asthma (some)",
+    "notes": "Always take with food"
+  },
+  {
+    "name": "Diclofenac",
+    "class": "NSAID",
+    "adult_dose": "75mg twice daily or 50mg three times daily",
+    "pediatric_dose": "1mg/kg twice to three times daily (>1 year)",
+    "indications": "Pain, inflammation, arthritis, musculoskeletal disorders",
+    "contraindications": "Peptic ulcer, heart failure, renal disease, third trimester pregnancy",
+    "notes": "Take with food"
+  },
+  {
+    "name": "Tramadol",
+    "class": "Opioid analgesic",
+    "adult_dose": "50-100mg every 4-6 hours, maximum 400mg/day",
+    "pediatric_dose": "1-2mg/kg every 4-6 hours (>1 year, >10kg)",
+    "indications": "Moderate to severe pain",
+    "contraindications": "Epilepsy, MAOIs, respiratory depression, children under 12",
+    "notes": "Controlled substance. Risk of dependence"
+  },
+  {
+    "name": "Omeprazole",
+    "class": "Proton Pump Inhibitor (PPI)",
+    "adult_dose": "20-40mg once daily before breakfast",
+    "pediatric_dose": "0.7-1.4mg/kg once daily (max 20mg)",
+    "indications": "GERD, peptic ulcer, H. pylori eradication, NSAID-induced ulcer prevention",
+    "contraindications": "Hypersensitivity",
+    "notes": "Take 30 minutes before meals"
+  },
+  {
+    "name": "Metformin",
+    "class": "Antidiabetic (Biguanide)",
+    "adult_dose": "500mg twice daily with meals, increase to max 2000mg/day",
+    "pediatric_dose": "Not recommended under 10 years",
+    "indications": "Type 2 diabetes mellitus, pre-diabetes",
+    "contraindications": "Renal impairment (eGFR <30), liver failure, heart failure, contrast media",
+    "notes": "Take with food. First-line therapy for T2DM"
+  },
+  {
+    "name": "Glibenclamide (Glyburide)",
+    "class": "Antidiabetic (Sulphonylurea)",
+    "adult_dose": "2.5-5mg once daily before breakfast, max 15mg/day",
+    "pediatric_dose": "Not recommended",
+    "indications": "Type 2 diabetes when metformin insufficient",
+    "contraindications": "Type 1 diabetes, renal/hepatic failure, pregnancy",
+    "notes": "Risk of hypoglycaemia. Ensure regular meals"
+  },
+  {
+    "name": "Amlodipine",
+    "class": "Antihypertensive (Calcium Channel Blocker)",
+    "adult_dose": "5-10mg once daily",
+    "pediatric_dose": "2.5-5mg once daily (6-17 years)",
+    "indications": "Hypertension, angina",
+    "contraindications": "Severe aortic stenosis, cardiogenic shock",
+    "notes": "Common side effect: ankle oedema"
+  },
+  {
+    "name": "Lisinopril",
+    "class": "Antihypertensive (ACE Inhibitor)",
+    "adult_dose": "5-10mg once daily, max 40mg/day",
+    "pediatric_dose": "0.07mg/kg once daily (>6 years)",
+    "indications": "Hypertension, heart failure, diabetic nephropathy",
+    "contraindications": "Pregnancy, bilateral renal artery stenosis, angioedema history",
+    "notes": "Common side effect: dry cough. Check renal function and potassium"
+  },
+  {
+    "name": "Atenolol",
+    "class": "Antihypertensive (Beta-blocker)",
+    "adult_dose": "25-100mg once daily",
+    "pediatric_dose": "0.5-1mg/kg once daily",
+    "indications": "Hypertension, angina, arrhythmia, post-MI",
+    "contraindications": "Asthma, bradycardia, heart block, cardiogenic shock",
+    "notes": "Do not stop abruptly"
+  },
+  {
+    "name": "Hydrochlorothiazide",
+    "class": "Antihypertensive (Thiazide Diuretic)",
+    "adult_dose": "12.5-25mg once daily in the morning",
+    "pediatric_dose": "1-2mg/kg/day in one or two doses",
+    "indications": "Hypertension, oedema",
+    "contraindications": "Anuria, hypersensitivity to sulfonamides, gout",
+    "notes": "Monitor electrolytes, especially potassium"
+  },
+  {
+    "name": "Furosemide (Frusemide)",
+    "class": "Loop Diuretic",
+    "adult_dose": "20-80mg once or twice daily",
+    "pediatric_dose": "1-2mg/kg once or twice daily",
+    "indications": "Heart failure, oedema, hypertension, pulmonary oedema",
+    "contraindications": "Anuria, hypovolaemia, hypokalaemia",
+    "notes": "Monitor electrolytes and renal function"
+  },
+  {
+    "name": "Atorvastatin",
+    "class": "Lipid-lowering (Statin)",
+    "adult_dose": "10-80mg once daily at night",
+    "pediatric_dose": "10-20mg daily (10-17 years with familial hypercholesterolaemia)",
+    "indications": "Hypercholesterolaemia, cardiovascular risk reduction",
+    "contraindications": "Active liver disease, pregnancy, breastfeeding",
+    "notes": "Preferably take in the evening. Monitor LFTs"
+  },
+  {
+    "name": "Aspirin",
+    "class": "Antiplatelet/NSAID",
+    "adult_dose": "75-150mg once daily (antiplatelet); 300-900mg every 4-6 hours (analgesia)",
+    "pediatric_dose": "Avoid in children under 16 (Reye syndrome risk)",
+    "indications": "Antiplatelet: MI prevention, stroke prevention, ACS; Analgesic: pain fever",
+    "contraindications": "Children under 16, peptic ulcer, bleeding disorders, third trimester",
+    "notes": "Irreversibly inhibits platelets"
+  },
+  {
+    "name": "Cotrimoxazole (Trimethoprim-Sulfamethoxazole)",
+    "class": "Antibiotic/Anti-infective",
+    "adult_dose": "960mg (2 standard tablets) twice daily for 5-7 days",
+    "pediatric_dose": "4/20mg/kg twice daily",
+    "indications": "UTI, chest infections, toxoplasmosis prophylaxis in HIV, PCP prophylaxis",
+    "contraindications": "Sulfonamide allergy, G6PD deficiency, severe renal/hepatic failure",
+    "notes": "Ensure adequate fluid intake"
+  },
+  {
+    "name": "Chlorphenamine (Chlorpheniramine)",
+    "class": "Antihistamine (1st generation)",
+    "adult_dose": "4mg every 4-6 hours, max 24mg/day",
+    "pediatric_dose": "0.1mg/kg every 6 hours",
+    "indications": "Allergic reactions, urticaria, hay fever, pruritus",
+    "contraindications": "Glaucoma, urinary retention, MAOIs",
+    "notes": "Causes drowsiness. Avoid driving"
+  },
+  {
+    "name": "Cetirizine",
+    "class": "Antihistamine (2nd generation)",
+    "adult_dose": "10mg once daily",
+    "pediatric_dose": "5mg once or twice daily (6-11 years); 2.5mg twice daily (2-5 years)",
+    "indications": "Allergic rhinitis, urticaria, eczema, allergic reactions",
+    "contraindications": "Severe renal impairment",
+    "notes": "Less sedating than chlorphenamine"
+  },
+  {
+    "name": "Salbutamol (Albuterol)",
+    "class": "Bronchodilator (Short-acting beta-2 agonist)",
+    "adult_dose": "100-200mcg (1-2 puffs) every 4-6 hours as needed",
+    "pediatric_dose": "100mcg (1 puff) as needed (under supervision)",
+    "indications": "Asthma, COPD, bronchospasm",
+    "contraindications": "Tachyarrhythmia",
+    "notes": "Shake inhaler. Rinse mouth after use if using spacer with steroid"
+  },
+  {
+    "name": "Prednisolone",
+    "class": "Corticosteroid",
+    "adult_dose": "5-60mg daily depending on indication",
+    "pediatric_dose": "1-2mg/kg/day in divided doses",
+    "indications": "Asthma exacerbation, severe allergic reactions, autoimmune conditions, inflammation",
+    "contraindications": "Systemic infections (without antibiotics), live vaccines",
+    "notes": "Do not stop abruptly if on long-term therapy"
+  },
+  {
+    "name": "Dexamethasone",
+    "class": "Corticosteroid",
+    "adult_dose": "0.5-24mg daily depending on indication",
+    "pediatric_dose": "0.08-0.3mg/kg/day",
+    "indications": "Severe asthma, croup, cerebral oedema, severe COVID-19, meningitis",
+    "contraindications": "Systemic fungal infections",
+    "notes": "More potent than prednisolone. IV/IM for severe conditions"
+  },
+  {
+    "name": "ORS (Oral Rehydration Salts)",
+    "class": "Rehydration therapy",
+    "adult_dose": "200-400mL after each loose stool, aiming for 3L/day",
+    "pediatric_dose": "50-100mL/kg over 3-4 hours for mild dehydration",
+    "indications": "Diarrhoea, dehydration, cholera",
+    "contraindications": "Severe dehydration requiring IV fluids, ileus",
+    "notes": "First-line for diarrhoeal disease in all ages"
+  },
+  {
+    "name": "Zinc Sulphate",
+    "class": "Micronutrient supplement",
+    "adult_dose": "20mg once daily",
+    "pediatric_dose": "10mg/day under 6 months; 20mg/day over 6 months for 10-14 days with ORS",
+    "indications": "Diarrhoea (adjunct), zinc deficiency, growth faltering",
+    "contraindications": "Hypersensitivity",
+    "notes": "Reduces duration and severity of diarrhoea in children"
+  },
+  {
+    "name": "Folic Acid",
+    "class": "Vitamin/Haematinic",
+    "adult_dose": "5mg once daily (therapeutic); 400mcg daily (prophylactic in pregnancy)",
+    "pediatric_dose": "500mcg/kg/day",
+    "indications": "Megaloblastic anaemia, pregnancy (neural tube defect prevention), haemolytic anaemia",
+    "contraindications": "Undiagnosed anaemia (may mask B12 deficiency)",
+    "notes": "Ideally start 3 months before conception"
+  },
+  {
+    "name": "Ferrous Sulphate",
+    "class": "Iron supplement",
+    "adult_dose": "200mg (65mg elemental iron) three times daily",
+    "pediatric_dose": "3-6mg/kg/day elemental iron in divided doses",
+    "indications": "Iron deficiency anaemia, pregnancy iron supplementation",
+    "contraindications": "Haemochromatosis, repeated blood transfusions",
+    "notes": "Take on empty stomach or with vitamin C. Stools may turn black"
+  },
+  {
+    "name": "Vitamin A",
+    "class": "Fat-soluble vitamin",
+    "adult_dose": "200,000 IU once (for deficiency or measles)",
+    "pediatric_dose": "100,000 IU (6-11 months); 200,000 IU (>12 months) every 6 months",
+    "indications": "Vitamin A deficiency, measles, night blindness, malnutrition",
+    "contraindications": "Pregnancy (high dose teratogenic)",
+    "notes": "Part of national immunisation programme in Ghana"
+  },
+  {
+    "name": "Gentamicin",
+    "class": "Antibiotic (Aminoglycoside)",
+    "adult_dose": "5-7mg/kg IV/IM once daily",
+    "pediatric_dose": "7.5mg/kg/day divided every 8 hours (neonatal: 4-7mg/kg/day)",
+    "indications": "Serious gram-negative infections, sepsis, neonatal sepsis",
+    "contraindications": "Renal impairment, myasthenia gravis",
+    "notes": "Monitor renal function and drug levels. Ototoxic and nephrotoxic"
+  },
+  {
+    "name": "Benzylpenicillin (Penicillin G)",
+    "class": "Antibiotic (Beta-lactam)",
+    "adult_dose": "1.2-2.4g IV every 4-6 hours",
+    "pediatric_dose": "50,000-100,000 units/kg/day divided every 4-6 hours",
+    "indications": "Meningitis, septicaemia, pneumonia, syphilis, neonatal infections",
+    "contraindications": "Penicillin allergy",
+    "notes": "IV administration. Monitor for hypersensitivity"
+  },
+  {
+    "name": "Ceftriaxone",
+    "class": "Antibiotic (3rd generation Cephalosporin)",
+    "adult_dose": "1-2g IV/IM once daily",
+    "pediatric_dose": "50-100mg/kg once daily (max 4g/day)",
+    "indications": "Meningitis, severe pneumonia, typhoid, sepsis, gonorrhoea",
+    "contraindications": "Cephalosporin allergy, neonates with hyperbilirubinaemia",
+    "notes": "Can be given IM (with lidocaine) or IV"
+  },
+  {
+    "name": "Fluconazole",
+    "class": "Antifungal",
+    "adult_dose": "150mg single dose (vaginal candidiasis); 200mg daily (systemic)",
+    "pediatric_dose": "3-12mg/kg/day",
+    "indications": "Candidiasis, cryptococcal meningitis, tinea infections",
+    "contraindications": "Hepatic impairment (high doses), QT prolongation",
+    "notes": "Significant drug interactions including with warfarin and statins"
+  },
+  {
+    "name": "Tenofovir-Lamivudine-Dolutegravir (TLD)",
+    "class": "Antiretroviral (NRTI + INSTI)",
+    "adult_dose": "One tablet (300/300/50mg) once daily",
+    "pediatric_dose": "Weight-band dosing for children",
+    "indications": "HIV-1 infection (first-line regimen in Ghana)",
+    "contraindications": "Severe renal impairment",
+    "notes": "Current WHO-recommended first-line ART. Take at same time daily"
+  },
+  {
+    "name": "Isoniazid",
+    "class": "Anti-tuberculosis",
+    "adult_dose": "5mg/kg (max 300mg) once daily",
+    "pediatric_dose": "10mg/kg (max 300mg) once daily",
+    "indications": "Tuberculosis treatment and prophylaxis",
+    "contraindications": "Severe liver disease, peripheral neuropathy",
+    "notes": "Give with pyridoxine (B6) to prevent peripheral neuropathy"
+  },
+  {
+    "name": "Rifampicin",
+    "class": "Anti-tuberculosis",
+    "adult_dose": "10mg/kg (max 600mg) once daily on empty stomach",
+    "pediatric_dose": "15mg/kg (max 600mg) once daily",
+    "indications": "Tuberculosis, leprosy, Neisseria meningitidis prophylaxis",
+    "contraindications": "Severe liver disease, jaundice",
+    "notes": "Turns urine/sweat/tears orange. Many drug interactions"
+  },
+  {
+    "name": "Diazepam",
+    "class": "Benzodiazepine/Anticonvulsant",
+    "adult_dose": "5-10mg IV slowly for seizures; 2-10mg orally for anxiety",
+    "pediatric_dose": "0.2-0.5mg/kg IV (max 10mg) for seizures; rectal: 0.5mg/kg",
+    "indications": "Seizures, status epilepticus, anxiety, muscle spasm, alcohol withdrawal",
+    "contraindications": "Respiratory depression, sleep apnoea, severe liver disease",
+    "notes": "Controlled substance. Risk of dependence"
+  },
+  {
+    "name": "Phenobarbital",
+    "class": "Anticonvulsant (Barbiturate)",
+    "adult_dose": "60-180mg at night (maintenance); 15-20mg/kg IV for status epilepticus",
+    "pediatric_dose": "3-5mg/kg/day (maintenance); 15-20mg/kg IV (status epilepticus)",
+    "indications": "Epilepsy, status epilepticus, neonatal seizures",
+    "contraindications": "Respiratory depression, porphyria",
+    "notes": "Long-acting. First-line for neonatal seizures"
+  },
+  {
+    "name": "Misoprostol",
+    "class": "Prostaglandin (Uterotonic)",
+    "adult_dose": "600mcg sublingual or 800mcg rectally for PPH",
+    "pediatric_dose": "N/A",
+    "indications": "Prevention and treatment of postpartum haemorrhage, medical abortion, cervical ripening",
+    "contraindications": "Allergy to prostaglandins",
+    "notes": "Essential medicine for maternal health"
+  },
+  {
+    "name": "Magnesium Sulphate",
+    "class": "Anticonvulsant/Tocolytic",
+    "adult_dose": "4g IV loading over 20 min, then 1g/hour maintenance",
+    "pediatric_dose": "25-50mg/kg for hypomagnesaemia",
+    "indications": "Pre-eclampsia, eclampsia seizure prophylaxis and treatment",
+    "contraindications": "Renal failure, myasthenia gravis",
+    "notes": "Monitor deep tendon reflexes, respiratory rate, urine output"
+  },
+  {
+    "name": "Insulin (Regular/Soluble)",
+    "class": "Antidiabetic hormone",
+    "adult_dose": "Individualised; DKA: 0.1 units/kg/hour IV",
+    "pediatric_dose": "Individualised",
+    "indications": "Type 1 diabetes, Type 2 diabetes (uncontrolled), diabetic ketoacidosis",
+    "contraindications": "Hypoglycaemia",
+    "notes": "Store in refrigerator. Monitor blood glucose closely"
+  },
+  {
+    "name": "Hydrocortisone",
+    "class": "Corticosteroid",
+    "adult_dose": "100-500mg IV every 6-8 hours (emergency); 20-30mg oral daily (replacement)",
+    "pediatric_dose": "2-8mg/kg IV (emergency)",
+    "indications": "Adrenal crisis, severe allergic reactions, anaphylaxis, severe asthma",
+    "contraindications": "Systemic infections without antimicrobials",
+    "notes": "IV for emergencies. Mineralocorticoid effects at high doses"
+  },
+  {
+    "name": "Adrenaline (Epinephrine)",
+    "class": "Sympathomimetic",
+    "adult_dose": "0.5mg (0.5mL of 1:1000) IM for anaphylaxis; repeat after 5 min if needed",
+    "pediatric_dose": "0.01mg/kg IM (max 0.5mg)",
+    "indications": "Anaphylaxis, cardiac arrest, severe asthma",
+    "contraindications": "No absolute contraindications in life-threatening emergencies",
+    "notes": "Outer mid-thigh IM injection. Store away from light"
+  }
+]
