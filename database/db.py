@@ -1,3 +1,13 @@
+"""
+db.py — SQLite Patient Records Store
+=====================================
+Manages all persistent storage for MediScribe AI:
+  - patients  : demographic info (name, DOB, gender, phone)
+  - sessions  : one row per consultation (doctor, date, transcript, status)
+  - notes     : Gemma 4-generated SOAP note and patient summary per session
+  - symptoms  : structured symptom JSON extracted by Gemma 4 function calling
+"""
+
 import sqlite3
 import json
 from datetime import datetime

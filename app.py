@@ -1,3 +1,30 @@
+"""
+app.py — MediScribe AI · Gradio Application Entry Point
+========================================================
+AI-powered clinical documentation assistant built for the Gemma 4 for Good hackathon.
+
+End-to-end consultation workflow:
+  1. Doctor selects/registers a patient and records the consultation via browser mic.
+  2. faster-whisper transcribes the audio locally on CPU.
+  3. Gemma 4 repairs ASR errors and labels each turn as Doctor or Patient.
+  4. Gemma 4 function calling extracts structured symptoms (chief complaint, vitals,
+     medications, allergies, follow-up actions) as validated JSON.
+  5. ChromaDB RAG retrieves relevant ICD-10 codes and WHO drug dosages.
+  6. Gemma 4 (reasoning/thinking mode) generates a structured SOAP note grounded
+     by the RAG context.
+  7. Gemma 4 generates a plain-language patient summary.
+  8. Doctor reviews and approves; everything is saved to SQLite.
+
+Optional: upload a lab result or prescription image — Gemma 4 multimodal reads it
+and includes the findings in the SOAP note automatically.
+
+Gemma 4 features demonstrated:
+  - Text generation (SOAP note, summary, transcript repair)
+  - Thinking / reasoning mode (SOAP note generation)
+  - Native function calling (structured symptom extraction)
+  - Multimodal / vision (medical document analysis)
+"""
+
 from dotenv import load_dotenv
 
 load_dotenv()

@@ -1,3 +1,15 @@
+"""
+symptom_agent.py — Structured Clinical Data Extraction
+=======================================================
+Extracts symptoms, vitals, medications, and follow-up actions from a consultation
+transcript using Gemma 4 native function calling.
+
+Gemma 4 feature used:
+  - Function calling: extract_symptoms_cloud() sends a typed FunctionDeclaration
+    schema (SYMPTOM_SCHEMA in cloud_agents.py) so Gemma 4 returns a validated
+    JSON object rather than free-form text — eliminating parsing errors.
+"""
+
 from agents.cloud_agents import extract_symptoms_cloud
 
 

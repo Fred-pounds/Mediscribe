@@ -1,3 +1,18 @@
+"""
+cloud_agents.py — Gemma 4 Cloud Inference Pipeline
+====================================================
+All calls to Gemma 4 (gemma-4-26b-a4b-it) via Google AI Studio go through this module.
+
+Gemma 4 features used:
+  - Text generation        : SOAP note generation, patient summary, transcript repair
+  - Thinking / reasoning   : SOAP notes use ThinkingConfig so the model reasons through
+                             the clinical picture before writing (use_thinking=True)
+  - Native function calling: extract_symptoms_cloud() uses a typed FunctionDeclaration
+                             schema to guarantee structured clinical JSON output
+  - Multimodal (vision)    : analyze_medical_document() passes image/PDF bytes alongside
+                             a text prompt so Gemma 4 reads uploaded lab results
+"""
+
 import os
 import base64
 from pathlib import Path

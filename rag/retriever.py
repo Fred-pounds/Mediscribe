@@ -1,3 +1,21 @@
+"""
+retriever.py — RAG Knowledge Base (ICD-10 + WHO Essential Medicines)
+=====================================================================
+Builds and queries a local ChromaDB vector store used to ground Gemma 4's
+SOAP note generation in verified clinical reference data.
+
+Pipeline:
+  1. On first startup, embed ICD-10 codes and WHO Essential Medicines entries
+     using sentence-transformers (all-MiniLM-L6-v2) and store in ChromaDB.
+  2. At generation time, retrieve the top-N most relevant codes/drugs for the
+     current consultation and inject them as context into the Gemma 4 prompt.
+     This reduces hallucinated drug dosages and ICD codes.
+
+Collections:
+  - icd10      : 90+ Ghana-relevant ICD-10 diagnosis codes
+  - medicines  : 40+ WHO Essential Medicines with dosages and indications
+"""
+
 from __future__ import annotations
 
 import json

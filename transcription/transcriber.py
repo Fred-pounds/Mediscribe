@@ -1,3 +1,14 @@
+"""
+transcriber.py — Local Speech-to-Text via faster-whisper
+=========================================================
+Records audio from the browser mic (passed as a file path by Gradio) and
+transcribes it locally on CPU using faster-whisper (Whisper small, int8).
+
+VAD filtering removes silence so only speech segments are transcribed.
+The raw transcript is then passed to Gemma 4 (cloud_agents.clean_and_label_transcript)
+for ASR error repair and Doctor/Patient speaker labelling.
+"""
+
 import os
 from faster_whisper import WhisperModel
 
