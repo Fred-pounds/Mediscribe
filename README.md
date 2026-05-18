@@ -1,19 +1,30 @@
-# Hospital Copilot
+---
+title: MediScribe AI
+emoji: 🏥
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+---
+
+# MediScribe AI
 
 AI-powered medical documentation assistant for the **Gemma 4 for Good** hackathon.
 
-Listens to doctor-patient consultations and automatically generates SOAP notes, patient summaries, symptom extractions, and Twi (Akan) translations — reducing paperwork and language barriers in Ghanaian healthcare.
+Record a doctor-patient consultation via your browser mic. MediScribe transcribes it, repairs ASR errors, extracts structured clinical data, and generates a professional SOAP note and patient summary — powered by Gemma 4.
 
 ## Features
 
-- **Live transcription** via faster-whisper (runs on CPU)
-- **Symptom extraction** via Gemma 4 E2B (local, Ollama, CPU)
-- **SOAP note generation** via Gemma 4 27B (Google AI Studio)
-- **Patient summary** in plain English
-- **English ↔ Twi translation** for Ghanaian patients
-- **Patient records** stored in local SQLite
+- **Browser mic recording** — no software install needed
+- **Transcript repair + speaker labelling** via Gemma 4
+- **Structured symptom extraction** via Gemma 4 function calling
+- **RAG-grounded SOAP notes** with ICD-10 codes and WHO drug references
+- **Multimodal document analysis** — upload lab results or prescriptions
+- **Patient records** stored in SQLite
 
-## Setup
+## Setup (local)
 
 ### 1. Install dependencies
 
@@ -21,53 +32,50 @@ Listens to doctor-patient consultations and automatically generates SOAP notes, 
 pip install -r requirements.txt
 ```
 
-### 2. Install Ollama and pull Gemma 4
-
-```bash
-# Install Ollama: https://ollama.com
-ollama pull gemma4:e2b
-```
-
-### 3. Configure environment
+### 2. Configure environment
 
 ```bash
 cp .env.example .env
-# Edit .env and add your Google AI Studio API key
+# Add your Google AI Studio API key
 ```
 
-Get a free API key at https://aistudio.google.com
+Get a free key at https://aistudio.google.com
 
-### 4. Run
+### 3. Run
 
 ```bash
 python app.py
 ```
 
-Open http://localhost:7860 in your browser.
+## Hugging Face Spaces
+
+Set `GEMINI_API_KEY` as a Space secret in Settings → Variables and secrets.
 
 ## Project Structure
 
 ```
-hosptial_copilot/
 ├── app.py                      # Gradio UI + app logic
 ├── agents/
-│   ├── symptom_agent.py        # Local Gemma 4 (Ollama) symptom extractor
-│   └── cloud_agents.py         # Cloud Gemma 4: SOAP, summary, translation
+│   ├── symptom_agent.py        # Symptom extractor (Gemma 4 function calling)
+│   └── cloud_agents.py         # SOAP, summary, transcript repair, document analysis
 ├── transcription/
-│   └── transcriber.py          # faster-whisper live mic transcription
+│   └── transcriber.py          # faster-whisper batch transcription
+├── rag/
+│   ├── retriever.py            # ChromaDB + sentence-transformers RAG
+│   └── data/                   # ICD-10 codes + WHO essential medicines
 ├── database/
 │   └── db.py                   # SQLite helpers
-├── requirements.txt
-└── .env.example
+└── requirements.txt
 ```
 
 ## Architecture
 
 ```
-Microphone
-  └─► faster-whisper (local, CPU)   → raw transcript
-        ├─► Gemma 4 E2B via Ollama  → symptom JSON (local CPU)
-        └─► Gemma 4 27B via API     → SOAP note + summary + Twi translation
-              └─► SQLite            → patient records
-                    └─► Gradio UI   → doctor dashboard
+Browser Mic
+  └─► faster-whisper (CPU)      → raw transcript
+        └─► Gemma 4 26B (API)   → cleaned transcript + speaker labels
+              ├─► Gemma 4 function calling → structured symptom JSON
+              ├─► ChromaDB RAG  → ICD-10 codes + drug dosages
+              └─► Gemma 4 reasoning mode → SOAP note + patient summary
+                    └─► SQLite  → patient records
 ```
